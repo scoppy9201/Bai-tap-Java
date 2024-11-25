@@ -29,6 +29,16 @@ public class Main {
                 case 2:
                     ts.hienThiThongTin();
                     break;
+                case 3:
+                    System.out.print("Nhap so bao danh thí sinh cần tìm: ");
+                    String soBaoDanh = s.nextLine();
+                    ThiSinh thiSinh = ts.timkiemsobaodanh(soBaoDanh); // Tìm thí sinh theo số báo danh
+                    if (thiSinh != null) {
+                        thiSinh.hienThiThongTin();
+                    } else {
+                        System.out.println("Khong tim thay thi sinh voi so bao danh " + soBaoDanh);
+                    }
+                    break;
                 case 0:
                     System.out.println("Ket thuc chuong trinh!");
                     break;
