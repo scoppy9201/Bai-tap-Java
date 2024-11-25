@@ -24,6 +24,10 @@ public class ThiSinh {
             khoiThi = "Chưa xác định";
         }
 
+        public String getSoBaoDanh(){
+                return soBaoDanh;
+        }
+
         public void nhapThongTin() {
             Scanner s = new Scanner(System.in);
                     System.out.print("Nhap so bao danh: ");
