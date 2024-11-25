@@ -59,4 +59,15 @@ public class TuyenSinh {
             System.out.println("----------------------------");
         }
     }
+     public ThiSinh timkiemsobaodanh(String soBaoDanh){
+        for(int i  = 0; i < soLuong; i++){
+            if(danhSach[i].getSoBaoDanh().equals(soBaoDanh)){
+                return danhSach[i];
+                }
+            }
+        return null;
+        }
+    public void Ketthuc(){
+        System.out.println("Ket thuc chuong trinh!");
+    }
 }
